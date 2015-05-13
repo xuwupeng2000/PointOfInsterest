@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent" android:gravity="top">
+    <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:layout_height="wrap_content" android:id="@+id/textView1" android:layout_width="wrap_content" android:layout_alignParentLeft="true" android:text="@string/username"></TextView>
+    <EditText android:layout_below="@+id/textView1" android:inputType="textPersonName" android:layout_height="wrap_content" android:id="@+id/reg_edittext_username" android:layout_width="fill_parent" android:layout_alignParentRight="true"></EditText>
+    
+    <TextView android:layout_below="@+id/reg_edittext_username" 
+    android:textAppearance="?android:attr/textAppearanceLarge" 
+    android:layout_height="wrap_content" 
+    android:id="@+id/textView2" 
+    android:layout_width="wrap_content" 
+    android:layout_alignParentLeft="true" 
+    android:text="@string/password"></TextView>
+    <EditText android:layout_below="@+id/textView2" 
+    android:inputType="textPassword" 
+    android:layout_height="wrap_content" 
+    android:layout_alignParentLeft="true" 
+    android:layout_width="fill_parent" 
+    android:id="@+id/reg_edittext_password">
+    </EditText>
+    
+    <TextView android:layout_below="@+id/reg_edittext_password" 
+    android:textAppearance="?android:attr/textAppearanceLarge" 
+    android:layout_height="wrap_content" 
+    android:id="@+id/textView3" 
+    android:layout_width="wrap_content" 
+    android:layout_alignParentLeft="true" 
+    android:text="@string/password2"></TextView>
+    <EditText android:layout_below="@+id/textView3" 
+    android:inputType="textPassword" 
+    android:layout_height="wrap_content" 
+    android:layout_alignParentLeft="true" 
+    android:layout_width="fill_parent" 
+    android:id="@+id/reg_edittext_password2">
+    </EditText>    
+    
+    <Button android:layout_below="@+id/reg_edittext_password2" android:layout_alignParentLeft="true" android:layout_height="wrap_content" android:text="@string/confirm" android:layout_width="80dip" android:id="@+id/reg_button_confirm"></Button>
+    <Button android:layout_below="@+id/reg_edittext_password2" android:layout_alignParentRight="true" android:layout_height="wrap_content" android:text="@string/Exit" android:layout_width="80dip" android:id="@+id/reg_button_exit"></Button>
+    
+</RelativeLayout>

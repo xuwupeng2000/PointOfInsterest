@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent">
+    <EditText android:inputType="textMultiLine" 
+    android:layout_alignParentLeft="true" 
+    android:id="@+id/comment_mutiliEdit" 
+    android:layout_width="match_parent"
+     android:isScrollContainer="true"
+      android:layout_height="300dip" 
+      android:editable="false">
+    </EditText>
+    
+    <Button 
+    android:layout_height="wrap_content" 
+    android:layout_width="wrap_content" 
+    android:layout_below="@+id/comment_mutiliEdit" 
+    android:layout_alignRight="@+id/comment_mutiliEdit" 
+    
+    android:text="@string/add" 
+    android:id="@+id/comment_button_add"></Button>
+    
+    <EditText android:layout_alignParentLeft="true"
+     android:layout_height="wrap_content" 
+     android:layout_below="@+id/comment_mutiliEdit" 
+     android:id="@+id/comment_Edittext" 
+     android:layout_width="200dip">
+        <requestFocus></requestFocus>
+    </EditText>
+    
+</RelativeLayout>

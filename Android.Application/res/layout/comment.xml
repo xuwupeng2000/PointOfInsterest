@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="fill_parent"
+android:layout_height="fill_parent"
+android:padding="10dip"
+>
+
+	<TextView
+		android:id="@+id/commentview"
+		android:text="comments are here"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:textSize="6pt"
+		/>
+	
+	
+	<EditText
+		android:layout_alignParentLeft="true"
+     	android:layout_height="wrap_content"      	
+		android:id="@+id/addnewcommentbox"
+		android:layout_below="@+id/commentview"
+		android:layout_width="200dip"		
+		android:textSize="6pt"
+		/>	
+	
+	<Button
+		android:layout_alignRight="@+id/commentview" 
+		android:id="@+id/addnewcomment"
+		android:text="add"
+		android:layout_below="@+id/commentview"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:textSize="6pt"
+		/>
+	
+	
+
+   
+</RelativeLayout>

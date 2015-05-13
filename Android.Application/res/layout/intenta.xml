@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="fill_parent">
+
+
+	<ScrollView
+		android:layout_width="fill_parent" android:layout_height="fill_parent"
+		android:fillViewport="true">
+
+		<LinearLayout android:layout_width="fill_parent"
+			android:layout_height="wrap_content" android:orientation="vertical">
+
+			<LinearLayout android:orientation="horizontal"
+				android:layout_width="fill_parent" android:layout_height="wrap_content">
+
+				<ImageView android:id="@+id/imageView1"
+					android:layout_width="fill_parent" android:layout_height="wrap_content"
+					android:src="@drawable/androidmarker" android:layout_weight="3"></ImageView>
+
+				<LinearLayout android:orientation="vertical"
+					android:layout_width="fill_parent" android:layout_height="wrap_content"
+					 android:layout_weight="2">
+
+					<TextView android:id="@+id/nameoftitle"
+						android:layout_width="fill_parent" android:layout_height="wrap_content"
+						android:text="@string/title" />
+
+					<EditText android:id="@+id/title"
+						android:layout_width="fill_parent" android:layout_height="wrap_content"
+						android:layout_below="@id/nameoftitle" />
+				</LinearLayout>
+
+
+
+
+			</LinearLayout>
+
+<!--			<TextView android:id="@+id/address" android:layout_width="wrap_content"-->
+<!--				android:layout_height="wrap_content" android:text="@string/address"-->
+<!--				 android:visibility="invisible" />-->
+<!---->
+<!--			<TextView android:id="@+id/geoPoints" android:layout_width="wrap_content"-->
+<!--				android:layout_height="wrap_content" android:text="@string/geoPoints"-->
+<!--				 android:visibility="invisible" />-->
+<!---->
+<!--			<TextView android:layout_width="fill_parent"-->
+<!--				android:layout_height="wrap_content" android:text="@string/body"-->
+<!--				 android:id="@+id/nameofbody" android:visibility="invisible" />-->
+
+           <TextView android:id="@+id/nameofbody"
+						android:layout_width="fill_parent" android:layout_height="wrap_content"
+						android:text="@string/body" />
+
+			<EditText android:id="@+id/body" android:layout_width="fill_parent"
+				android:layout_height="wrap_content" android:layout_weight="1"
+				android:scrollbars="vertical"  />
+				
+			<LinearLayout android:orientation="horizontal"
+				android:layout_width="fill_parent" android:layout_height="wrap_content">
+				
+				<TextView android:id="@+id/tagtit" android:text="Tags:"
+				android:layout_width="fill_parent" android:layout_height="wrap_content"
+				android:layout_weight="4" />
+				
+				<TextView android:id="@+id/tagview" 
+				android:layout_width="fill_parent" android:layout_height="wrap_content"
+				android:textSize="6pt" 
+				android:layout_weight="2"/>
+				<Button android:layout_weight="4" android:id="@+id/deletetag"
+					android:layout_width="fill_parent" android:layout_height="wrap_content"
+					android:text="@string/delete"></Button>
+				</LinearLayout>
+				
+			<LinearLayout android:orientation="horizontal"
+				android:layout_width="fill_parent" android:layout_height="wrap_content">
+				<AutoCompleteTextView android:layout_weight="1" android:id="@+id/tagenter" android:layout_width="fill_parent"
+				android:layout_height="wrap_content" 
+				android:scrollbars="vertical"  />
+				<Button android:layout_weight="4" android:id="@+id/addtag"
+					android:layout_width="fill_parent" android:layout_height="wrap_content"
+					android:text="@string/add"></Button>
+            </LinearLayout>
+            
+			<TextView android:id="@+id/ratingview" android:text="Your rating"
+				android:layout_width="fill_parent" android:layout_height="wrap_content"
+				android:textSize="6pt" />
+
+			<RatingBar android:id="@+id/yourratingbar"
+				android:layout_below="@id/ratingview" android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:numStars="5"
+				android:stepSize="1" />
+
+			<LinearLayout android:orientation="horizontal"
+				android:layout_width="fill_parent" android:layout_height="wrap_content"
+				android:layout_alignParentBottom="true">
+				<Button android:layout_weight="1" android:id="@+id/deletebtn"
+					android:layout_width="wrap_content" android:layout_height="wrap_content"
+					android:text="@string/delete"></Button>
+				<Button android:layout_weight="1" android:id="@+id/addpicbtn"
+					android:layout_width="wrap_content" android:layout_height="wrap_content"
+					android:text="@string/addPic"></Button>
+				<Button android:layout_weight="1" android:layout_width="wrap_content"
+					android:layout_height="wrap_content" android:id="@+id/confirmbtn"
+					android:text="@string/confirm"></Button>
+			</LinearLayout>
+
+		</LinearLayout>
+	</ScrollView>
+
+</RelativeLayout>

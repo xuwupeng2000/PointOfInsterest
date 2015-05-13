@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:padding="10pt">
+
+			<EditText 
+				android:id="@+id/username"
+				android:text="username go to here"	
+				android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_gravity="center_horizontal"/>
+	            
+	            
+	        <EditText 
+				android:id="@+id/passwd"
+				android:text="password go to here"
+				android:password="true"	
+				android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_gravity="center_horizontal"/>    
+
+            <Button
+	            android:id="@+id/login_button"
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_gravity="center_horizontal"
+	            android:text="Login"
+	            android:onClick="loginAccount"/>
+
+	            
+	        <Button 
+	        	android:id="@+id/new_account_button"
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_gravity="center_horizontal"
+	            android:text="Create new account"
+	            android:onClick="createAccount" />
+
+</LinearLayout>

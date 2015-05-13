@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="fill_parent"
+android:layout_height="fill_parent"
+android:padding="10dip"
+>
+
+	<TextView
+		android:id="@+id/ratingview"
+		android:text="averge rate is here"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:textSize="6pt"
+		/>
+		
+	<RatingBar 
+ 		android:id="@+id/averageratingbar"
+ 		android:layout_below="@+id/ratingview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:isIndicator="true"
+        android:numStars="5"
+        android:stepSize="1.0"/>	
+		
+	<TextView
+		android:id="@+id/newratingview"
+		android:text="your new rate is here"
+		android:layout_below="@+id/averageratingbar"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:textSize="6pt"
+		/>
+			
+ 	<RatingBar 
+ 		android:id="@+id/ratingbar"
+ 		android:layout_below="@+id/newratingview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:numStars="5"
+        android:stepSize="1.0"/>
+	
+	<Button
+		android:id="@+id/rateit"
+		android:text="rate this poi"
+		android:layout_below="@+id/ratingbar"	
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:textSize="6pt"
+		/>
+	
+	
+	<Button
+		android:id="@+id/closeratingmenu"
+		android:text="close"
+		android:layout_below="@+id/rateit"	
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:textSize="6pt"
+		/>
+   
+</RelativeLayout>

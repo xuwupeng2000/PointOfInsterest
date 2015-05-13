@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+
+    android:orientation="horizontal" 
+  	android:scrollbars="horizontal"
+    >
+    
+
+    
+<Gallery  
+     android:id="@+id/gallery"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center_horizontal"
+    android:scrollbars="horizontal"
+
+   
+  
+/>
+
+
+			<Button android:id="@+id/addphoto"
+			android:layout_width="155px"
+			android:layout_height="wrap_content"
+			android:text="Add Photo"
+			android:layout_alignBottom="@+id/gallary"
+			android:layout_alignParentBottom="true"/>
+			
+			<Button android:id="@+id/deletephoto"
+			android:layout_width="165px"
+			android:layout_height="wrap_content"
+			android:text="Delete"
+			android:layout_alignBottom="@+id/gallary"
+			android:layout_alignParentBottom="true"
+			android:layout_toRightOf="@+id/addphoto"/>
+			
+			<Button android:id="@+id/cancel"
+			android:layout_width="155px"
+			android:layout_height="wrap_content"
+			android:text="Close"
+			android:layout_alignBottom="@+id/gallary"
+			android:layout_alignParentBottom="true"
+			android:layout_toRightOf="@+id/deletephoto"/>
+			
+			
+			
+			
+
+
+</RelativeLayout>
+
+
+
+   

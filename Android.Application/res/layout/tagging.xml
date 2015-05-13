@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="fill_parent"
+android:layout_height="fill_parent"
+android:padding="10dip"
+>
+
+	<TextView
+		android:id="@+id/tagview"
+		android:text="tags are here"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:textSize="6pt"
+		/>
+	
+	
+	<EditText
+		android:id="@+id/addnewtagbox"
+		android:layout_below="@+id/tagview"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:textSize="6pt"
+		/>	
+	
+	<Button
+		android:id="@+id/addnewtag"
+		android:text="add a new tag"
+		android:layout_below="@+id/addnewtagbox"	
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:textSize="6pt"
+		/>
+	
+	
+	<Button
+		android:id="@+id/closetaggingmenu"
+		android:text="close"
+		android:layout_below="@+id/addnewtag"	
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:textSize="6pt"
+		/>
+   
+</RelativeLayout>

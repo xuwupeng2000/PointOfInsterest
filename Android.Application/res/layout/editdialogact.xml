@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="fill_parent"
+android:layout_height="fill_parent"
+android:padding="10dip"
+>
+
+	<EditText
+		android:id="@+id/edet1"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:textSize="6pt"
+		/>
+		
+	<EditText
+		android:id="@+id/edet2"
+		android:layout_width="fill_parent"
+		android:layout_height="100dip"
+		android:layout_below="@+id/edet1"
+		android:textSize="6pt"
+		/>
+	
+	<Button
+		android:id="@+id/delete"
+		android:text="delete"
+		android:layout_below="@+id/edet2"	
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:textSize="6pt"
+		/>
+	
+	
+	<Button
+		android:id="@+id/confirm"
+		android:text="confirm changing"
+		android:layout_below="@+id/delete"	
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:textSize="6pt"
+		/>
+	
+	
+	
+	
+	<Button
+		android:id="@+id/cancel"
+		android:text="cancel"
+		android:layout_below="@+id/confirm"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:textSize="6pt"
+		/>
+		
+   
+</RelativeLayout>

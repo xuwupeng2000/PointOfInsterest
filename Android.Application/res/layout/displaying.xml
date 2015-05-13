@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout android:id="@+id/God"
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="fill_parent">
+
+	<ScrollView android:layout_width="fill_parent"
+		android:layout_height="fill_parent" android:fillViewport="true">
+
+		<LinearLayout android:layout_width="fill_parent"
+			android:layout_height="wrap_content" android:orientation="vertical">
+
+<TextView android:id="@+id/description" android:text="Click picture to open gallery..."
+				android:layout_width="fill_parent" android:layout_height="wrap_content"
+				android:textSize="4pt" />	
+			<ImageView android:id="@+id/ImageView01"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"
+				android:layout_centerHorizontal="true" android:layout_weight="1" 
+				android:scaleType="centerCrop" android:clickable="true" android:paddingBottom="3px"
+				android:paddingLeft = "100px"/>
+				
+			<TextView android:id="@+id/description" android:text="Description:"
+				android:layout_width="fill_parent" android:layout_height="wrap_content"
+				android:textSize="4pt" />	
+
+			<TextView android:id="@+id/TextView01" android:layout_width="fill_parent"
+				android:layout_height="wrap_content" android:layout_weight="1"
+				android:scrollbars="vertical" android:textSize="6pt" android:paddingBottom="3px"/>
+
+			<TextView android:id="@+id/ratingavview" android:text="Average rating:"
+				android:layout_width="fill_parent" android:layout_height="wrap_content"
+				android:textSize="4pt" />
+
+			<RatingBar android:id="@+id/averageratingbar"
+				android:layout_below="@id/ratingavview" android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:numStars="5"
+				android:stepSize="0.5" android:isIndicator="true"/>
+
+			<LinearLayout android:id="@+id/buttons"
+				android:orientation="horizontal" android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:layout_alignParentBottom="true">
+				<Button android:text="Comment" android:layout_width="fill_parent"
+					android:layout_height="wrap_content" android:layout_weight="1"
+					android:id="@+id/display_button_comment"></Button>
+				<Button android:text="More" android:layout_width="fill_parent"
+					android:layout_height="wrap_content" android:layout_weight="1"
+					android:id="@+id/display_bt_updata"></Button>
+			</LinearLayout>
+
+		</LinearLayout>
+
+	</ScrollView>
+</RelativeLayout>

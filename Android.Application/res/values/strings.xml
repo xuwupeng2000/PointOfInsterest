@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="address">No Address fount at the point</string>
+	<string name="body">Body</string>
+	<string name="confirm">Confirm</string>
+	<string name="delete">Delete</string>
+	<string name="geoPoints">0,0</string>
+	<string name="menu_chose">Choose Range</string>
+	<string name="menu_insert">Add Item</string>
+	<string name="menu_login">LogIn</string>
+	<string name="menu_logout">LogOut</string>
+	<string name="password">Password</string>
+	<string name="password2">Re-Password</string>
+	<string name="title">Title</string>
+	<string name="username">User name</string>
+    <string name="app_name">POI</string>    
+    <string name="hello">Hello World, POI!</string>
+    <string name="world">World!</string>
+    <string name="emailaddress">Email Address</string>
+    <string name="Exit">Exit</string>
+    <string name="login">Login</string>
+    <string name="register">Register</string>
+    <string name="add">Add</string>
+        <string name="find">Find</string>
+    <string name="addPic">AddPic</string>
+    <string name="search_hint">Takeaway</string>
+    <string name="stop_search">Stop Searching</string>
+    
+    
+</resources>
